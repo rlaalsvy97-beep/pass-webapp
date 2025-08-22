@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>영상 재생</title>
+<style>
+  html,body{height:100%;margin:0;background:#000}
+  .stage{height:100%;display:grid;place-items:center}
+  video{
+    width:100vw; height:100vh;
+    object-fit:cover; background:#000;
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <video autoplay muted playsinline webkit-playsinline>
+      <source src="myvideo.mp4" type="video/mp4">
+      이 브라우저는 영상을 재생할 수 없습니다.
+    </video>
+  </div>
+</body>
+</html>
